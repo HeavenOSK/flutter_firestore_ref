@@ -303,9 +303,11 @@ packages:
   flutter_state_notifier:
     dependency: "direct main"
     description:
-      name: flutter_state_notifier
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "packages/flutter_state_notifier"
+      ref: HEAD
+      resolved-ref: "04abb356024fa252ca0566bb40a8e7dea3047ba1"
+      url: "https://github.com/rrousselGit/state_notifier.git"
+    source: git
     version: "0.6.0"
   flutter_test:
     dependency: "direct dev"
