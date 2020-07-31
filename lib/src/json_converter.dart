@@ -58,3 +58,23 @@ class ColorConverter implements JsonConverter<Color, int> {
   @override
   int toJson(Color object) => object.value;
 }
+
+class IntegerConverter implements JsonConverter<int, num> {
+  const IntegerConverter();
+
+  @override
+  int fromJson(num json) => json?.toInt();
+
+  @override
+  num toJson(int object) => object;
+}
+
+class DoubleConverter implements JsonConverter<double, num> {
+  const DoubleConverter();
+
+  @override
+  double fromJson(num json) => json?.toDouble();
+
+  @override
+  num toJson(double object) => object;
+}
